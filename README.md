@@ -19,9 +19,11 @@ in include.mk and .travis.yml.
 If you're not me, you probably also want to edit .travis.yml a bit,
 specifically the deploy token since it won't work otherwise.
 
-Do this by running `travis setup releases`.
+Do this by running `travis setup releases --force`.
 
-If you don't have travis CLI, run `gem install travis`.
+If you don't have Travis CLI, run `gem install travis`.
+
+You will very much want to copy the file settings from .travis.yml before setting your auth token and restore them after since they're part of the magicalness.  You will also want to keep the tags: true section.
 
 Yes, this is all being included in a man page.  Oh well.
 
