@@ -3,6 +3,8 @@ include include.mk
 ${PROJECT_NAME}:
 	@echo ${PROJECT_NAME} is a static file.
 	@echo You could probably build a file in here if you were using a compiled language though.
+	cat hello.in > hello
+	chmod +x hello
 
 ${PROJECT_NAME}.1.gz: README.md
 	rvm install 2.2.2
