@@ -19,7 +19,9 @@ in include.mk and .travis.yml.
 If you're not me, you probably also want to edit .travis.yml a bit,
 specifically the deploy token since it won't work otherwise.
 
-Do this by running `travis setup releases --force`.
+There are a few ways to do this.  The first way is by running travis encrypt and encrypting a personal authentication token with it.  The output goes under the api_key section.  It should look similar to what it does in my .travis.yml.
+
+Also, this can be done by running `travis setup releases --force`.
 
 If you don't have Travis CLI, run `gem install travis`.
 
